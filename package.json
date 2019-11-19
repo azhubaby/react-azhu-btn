@@ -8,7 +8,8 @@
     "build:package": "webpack --config example/webpack.prod.js",
     "build:lib": "cross-env babel src --out-dir lib",
     "build": "rm -rf lib && mkdir lib && npm run build:package && npm run build:lib",
-    "eslint": "eslint --fix ."
+    "eslint": "eslint --fix .",
+    "precommit": "eslint src/**/*.js"
   },
   "keywords": [
     "react",
