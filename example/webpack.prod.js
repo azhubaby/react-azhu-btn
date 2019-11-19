@@ -55,18 +55,20 @@ module.exports = {
                     {
                         loader: 'url-loader',
                         options: {
-                            limit: 8192
+                            limit: 8192,
+                            name: 'images/[name].[ext]'
                         }
                     }
                 ]
             },
             {
-                test: /\.(ttf|eof|svg|woff|woff2)$/,
+                test: /\.(ttf|eot|svg|woff|woff2)$/,
                 use: [
                     {
                         loader: 'url-loader',
                         options: {
-                            limit: 8192
+                            limit: 8192,
+                            name: 'fonts/[name].[ext]'
                         }
                     }
                 ]
